@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () { return view('welcome'); });
+
+Route::get('/', array('as' => 'index', 'uses' => 'FrontEndController@index'));
